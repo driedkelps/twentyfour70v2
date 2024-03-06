@@ -170,7 +170,7 @@ function updateItemQty(event) {
 }
 
 function getCartData() {
-if ("realtimeCart".strValue !== undefined || null) {
+if ("realtimeCart" !== undefined || null) {
     //console.log(cartData.length)
     realtimeCart = JSON.parse(window.localStorage.getItem("realtimeCart"))
     //console.log(JSON.parse(localStorage.getItem("realtimeCart")))
