@@ -183,6 +183,7 @@ if (typeof "realtimeCart" != "undefined") {
 }
 
 function addToCart(event) {
+    getCartData()
     //event.setProperty(Cancelable, "false");
     console.log("add to cart btn called")
     qtyElement = document.getElementById('quant-no').getAttribute('value');
