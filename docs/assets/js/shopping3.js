@@ -13,6 +13,7 @@ var itemPrice = null;
 
 // load cart total
 window.onload = function() {
+    getCartData()
     updateCartTotal()
  }
 
@@ -167,6 +168,18 @@ function updateItemQty(event) {
     }
 }
 
+function getCartData() {
+if (typeof realtimeCart != "undefined") {
+    //console.log(cartData.length)
+    realtimeCart = JSON.parse(window.localStorage.getItem("realtimeCart"))
+    //console.log(JSON.parse(localStorage.getItem("realtimeCart")))
+
+    //.includes(addedCartItems.Product))
+    //(JSON.parse(realtimeCart)).includes(addedCartItems.Product) //<-- error here, how to parse?
+    } else{
+        realtimeCart = [];
+    }
+}
 
 function addToCart(event) {
     //event.setProperty(Cancelable, "false");
