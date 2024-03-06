@@ -115,7 +115,6 @@ function updateCartTotal() {
     document.getElementsByClassName('cart-subtotal')[0].innerText = '$' + parseFloat(totalsub).toFixed(2)
     document.getElementsByClassName('cart-total')[0].innerText = '$' + parseFloat(total).toFixed(2)
     document.getElementsByClassName('cart-balance')[0].innerText = '$' + parseFloat(balancevalue - total).toFixed(2)
-
 }
 
 
