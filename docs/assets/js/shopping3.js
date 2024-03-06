@@ -169,7 +169,7 @@ function updateItemQty(event) {
 }
 
 function getCartData() {
-if (typeof realtimeCart != "undefined") {
+if (typeof "realtimeCart" != "undefined") {
     //console.log(cartData.length)
     realtimeCart = JSON.parse(window.localStorage.getItem("realtimeCart"))
     //console.log(JSON.parse(localStorage.getItem("realtimeCart")))
@@ -247,7 +247,7 @@ console.log(realtimeCart)
 function updateCartItems() {
     cartData = JSON.parse(localStorage.getItem("cartData"))
     localStorage.setItem(realtimeCart, realtimeCart.push(cartData)) //<-- rmb to add back 'window.localstorage...'
-    realtimeCart.flat(1)
+    localStorage.setItem(realtimeCart.flat(1))
     localStorage.setItem("realtimeCart", JSON.stringify(realtimeCart)) //<-- rmb to add back 'window.localstorage...'
     console.log("realtimeCart")
     
