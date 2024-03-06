@@ -234,7 +234,7 @@ console.log(realtimeCart)
 function updateCartItems() {
     cartData = JSON.parse(localStorage.getItem("cartData"))
     localStorage.setItem(realtimeCart, realtimeCart.push(cartData)) //<-- rmb to add back 'window.localstorage...'
-    realtimeCart.flat(2)
+    realtimeCart.flat(1)
     localStorage.setItem("realtimeCart", JSON.stringify(realtimeCart)) //<-- rmb to add back 'window.localstorage...'
     console.log("realtimeCart")
     
@@ -306,33 +306,4 @@ function updateCartItems() {
 // if (qtyElement && optionValue && itemName) {
     
 // }
-
-
-
-
-
-
-
-
-// dont need this //
-// var i = 1;
-// 		document.getElementById("plus").onclick = function() {
-//         i++;
-//         document.getElementById('quant-no').value = i;
-//     if (i>7){
-//         document.getElementById('quant-no').disabled = false;
-//         document.getElementById('quant-no').value = 7;
-//         alert("Don't be greedy!");
-//     }}
-    
-//     var i = 1;
-// 		document.getElementById("minus").onclick = function() {
-//         i--;
-//         document.getElementById('quant-no').value = i;
-//     if (i<1){
-//         document.getElementById('quant-no').disabled = false;
-//         document.getElementById('quant-no').value = 1;
-//         alert("Minimum quantity is 1!");
-//     }}
-
 
