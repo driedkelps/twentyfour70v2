@@ -170,7 +170,7 @@ function updateItemQty(event) {
 }
 
 function getCartData() {
-if (typeof "realtimeCart" != "undefined") {
+if ("realtimeCart".strValue !== undefined || null) {
     //console.log(cartData.length)
     realtimeCart = JSON.parse(window.localStorage.getItem("realtimeCart"))
     //console.log(JSON.parse(localStorage.getItem("realtimeCart")))
@@ -220,8 +220,9 @@ var addedCartItems = {}
     for (var i = 0; i < realtimeCart.length; i++) {
         var realtimeCVcheck = realtimeCart.map(x=> x.Product)
         console.log(realtimeCVcheck)}
-
-   if (realtimeCVcheck.includes(addedCartItems.Product) == true) {         
+    
+if realtimeCVcheck != 0 {
+} if ((realtimeCVcheck.includes(addedCartItems.Product)) == true) {         
     alert("Item is already in cart!")
     return
     }else {
