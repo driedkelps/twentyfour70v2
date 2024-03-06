@@ -216,7 +216,7 @@ var addedCartItems = {}
     // newArray.push(addedCartItems)
     // console.log(newArray)
     
-    var realtimeCVcheck = 0;
+var realtimeCVcheck = 0;
     for (var i = 0; i < realtimeCart.length; i++) {
         var realtimeCVcheck = realtimeCart.map(x=> x.Product)
         console.log(realtimeCVcheck)}
@@ -226,18 +226,18 @@ var addedCartItems = {}
         if (realtimeCVcheck.includes(addedCartItems.Product) == true) {         
             alert("Item is already in cart!")
             return
-            }
+            } else {
+                window.localStorage.setItem("cartData", JSON.stringify(cartData))
+                console.log(cartData)
+            } 
     }
     else {
         window.localStorage.setItem("cartData", JSON.stringify(cartData))
         console.log(cartData)
-    } 
+    }  
 
-        // cartData.concat(newArray)
-        // window.localStorage.setItem("cartData", JSON.stringify(cartData))
     updateCartItems() 
     console.log(realtimeCart)
-
 }
 
 
