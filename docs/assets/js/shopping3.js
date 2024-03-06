@@ -247,7 +247,7 @@ console.log(realtimeCart)
 function updateCartItems() {
     cartData = JSON.parse(localStorage.getItem("cartData"))
     localStorage.setItem(realtimeCart, realtimeCart.push(cartData)) //<-- rmb to add back 'window.localstorage...'
-    localStorage.setItem(realtimeCart.flat(1))
+    realtimeCart.flat(1)
     localStorage.setItem("realtimeCart", JSON.stringify(realtimeCart)) //<-- rmb to add back 'window.localstorage...'
     console.log("realtimeCart")
     
