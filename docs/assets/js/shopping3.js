@@ -8,6 +8,7 @@ var itemName = null;
 var itemPrice = null;
 //var cartData = [];
 
+
 // let addedCartItemsKey = JSON.parse(localStorage.getItem("addedCartItemsKey"));
 //    let cartData = JSON.parse(localStorage.getItem("cartData"));
 
@@ -225,7 +226,7 @@ var addedCartItems = {}
     }else {
     window.localStorage.setItem("cartData", JSON.stringify(cartData))
     console.log(cartData)
-    updateCartItems() 
+updateCartItems() 
     // cartData.concat(newArray)
     // window.localStorage.setItem("cartData", JSON.stringify(cartData))
     } 
@@ -241,7 +242,6 @@ function updateCartItems() {
     console.log("realtimeCart")
     
 }
-
 
 
 
