@@ -7,7 +7,6 @@ var optionValue = null ;
 var itemName = null;
 var itemPrice = null;
 //var cartData = [];
-realtimeCart = [];
 
 // let addedCartItemsKey = JSON.parse(localStorage.getItem("addedCartItemsKey"));
 //    let cartData = JSON.parse(localStorage.getItem("cartData"));
@@ -202,14 +201,16 @@ var addedCartItems = {}
     // newArray.push(addedCartItems)
     // console.log(newArray)
 
-    if (realtimeCart.length != 0) {
+    if (typeof realtimeCart != "undefined") {
     //console.log(cartData.length)
     realtimeCart = JSON.parse(window.localStorage.getItem("realtimeCart"))
     //console.log(JSON.parse(localStorage.getItem("realtimeCart")))
 
     //.includes(addedCartItems.Product))
     //(JSON.parse(realtimeCart)).includes(addedCartItems.Product) //<-- error here, how to parse?
-    } 
+    } else{
+        realtimeCart = [];
+    }
     
     var realtimeCVcheck = 0;
     for (var i = 0; i < realtimeCart.length; i++) {
