@@ -220,7 +220,7 @@ var addedCartItems = {}
         var realtimeCVcheck = realtimeCart.map(x=> x.Product)
         console.log(realtimeCVcheck)}
 
-    if (realtimeCVcheck == addedCartItems.Product) {         
+   if (realtimeCVcheck.find(addedCartItems.Product) = addedCartItems.Product) {         
     alert("Item is already in cart!")
     return
     }else {
