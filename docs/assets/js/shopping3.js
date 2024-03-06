@@ -170,7 +170,7 @@ function updateItemQty(event) {
 }
 
 function getCartData() {
-if ("realtimeCart" !== undefined || null) {
+if (localStorage.getItem("realtimeCart") != undefined || null) {
     //console.log(cartData.length)
     realtimeCart = JSON.parse(window.localStorage.getItem("realtimeCart"))
     //console.log(JSON.parse(localStorage.getItem("realtimeCart")))
@@ -220,31 +220,35 @@ var addedCartItems = {}
     for (var i = 0; i < realtimeCart.length; i++) {
         var realtimeCVcheck = realtimeCart.map(x=> x.Product)
         console.log(realtimeCVcheck)}
-    
-if realtimeCVcheck != 0 {
-} if ((realtimeCVcheck.includes(addedCartItems.Product)) == true) {         
-    alert("Item is already in cart!")
-    return
-    }else {
-    window.localStorage.setItem("cartData", JSON.stringify(cartData))
-    console.log(cartData)
-updateCartItems() 
-    // cartData.concat(newArray)
-    // window.localStorage.setItem("cartData", JSON.stringify(cartData))
+
+
+    if (realtimeCVcheck != 0) {
+        if (realtimeCVcheck.includes(addedCartItems.Product) == true) {         
+            alert("Item is already in cart!")
+            return
+            }
+    }
+    else {
+        window.localStorage.setItem("cartData", JSON.stringify(cartData))
+        console.log(cartData)
     } 
-console.log(realtimeCart)
+
+        // cartData.concat(newArray)
+        // window.localStorage.setItem("cartData", JSON.stringify(cartData))
+    updateCartItems() 
+    console.log(realtimeCart)
+
 }
 
 
 function updateCartItems() {
     cartData = JSON.parse(localStorage.getItem("cartData"))
     localStorage.setItem(realtimeCart, realtimeCart.push(cartData)) //<-- rmb to add back 'window.localstorage...'
-    realtimeCart.flat(2)
+    realtimeCart.flat(1)
     localStorage.setItem("realtimeCart", JSON.stringify(realtimeCart)) //<-- rmb to add back 'window.localstorage...'
     console.log("realtimeCart")
     
 }
-
 
 
 //maybe useful function, finds product details//
@@ -257,53 +261,6 @@ function updateCartItems() {
 //     return result;
 // }
 ///////////////////////////////////////////////////////////////////////
-
-
-
-    // var comb = cartData.push(newArray);
-    // console.log(comb)
-// 
-    // window.localStorage.setItem("cartData", JSON.stringify(cartData))
-    // console.log("cartData")
-
-
-// if (cartData = undefined || null) {
-// let cartData = JSON.parse(localStorage.getItem("addedCartItemsKey"));
-// window.localStorage.setItem("cartData", JSON.stringify(cartData)) 
-// }
-    // window.localStorage.setItem(cartData, addedCartItems);
-    // window.localStorage.setItem("cartData", JSON.stringify(cartData))
-
-
-    // if(cartData.length == 0){
-    //     cartData.push(addedCartItemsKey);
-
-
-
-// function keyvalueCheck() {
-//     let res = JSON.parse(cartData.find(cartData.Product == addedCartItems.Product))
-//     if (res = undefined || null) {
-//         window.localStorage.setItem("cartData", JSON.stringify(cartData));
-//         console.log("cartData")
-//         }else {
-//         window.localStorage.setItem(cartData.Quantity++) ;
-//             return
-//         }  
-// console.log('keyvalueCheck ran')
-// }
-
-
-
-
-// var addedCartItems = {}
-// addedCartItems.Product = itemName;
-// addedCartItems.Type = optionValue;
-// addedCartItems.Quantity = qtyElement;
-// addedCartItems.Price = itemPrice;
-
-// console.log(addedCartItems);
-// localStorage.setItem('addedCartItemsKey', JSON.stringify(addedCartItems)) ; 
-    
 
 
 //shelved for now //
