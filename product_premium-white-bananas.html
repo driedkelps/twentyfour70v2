@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> Premium White Banans | TWENTY-FOUR.70</title>
+    <title> Main | TWENTY-FOUR.70</title>
     <style>
         body{
             background: #ffde59;
@@ -19,9 +19,9 @@
 </head>
 <body>
 
-   <div class="jumbotron-header">
+    <div class="jumbotron-header">
         <div class="container-center-text">
-            <a class="btn-header" href="https://driedkelps.github.io/twentyfour70v2/index.html#">
+            <a class="btn-header" href="https://driedkelps.github.io/twentyfour70v2/index_A.html#">
             <img src="docs/assets/Website assets/Logos/shopping site logo_BLACK.png" style="width: 200px" alt="Banner">  
             </a>    
                 <p>Your one-stop solution for anything under the sun!</p>
@@ -32,24 +32,21 @@
 <div class="header">
     <div class="container">
         <div class="navbar">
-        <a class="logo" href="https://driedkelps.github.io/twentyfour70v2/index.html#">
-            <img src="docs/assets/Website assets/Logos/shopping site logo_BLACK.png" width="125px" alt="TWENTY-FOUR.70 Online Store">
+        <a class="logo" href="https://driedkelps.github.io/twentyfour70v2/index_A.html#">
+            <img src=docs/assets/Website assets/Logos/shopping site logo_BLACK.png width="125px" alt="TWENTY-FOUR.70 Online Store">
         </a>
         <nav>
             <ul id="MenuItems">
-                <li><a href="">Home</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="https://driedkelps.github.io/twentyfour70v2/product-p1.html">All Products</a></li>
                 <li><a href="">About</a></li>
-                <li><a href="">Account</a></li>
             </ul>
         </nav>
     <div class="shopper-balance">
         <p>Balance:</p><p id="user-balance">$24.70</p>
         </div>
-<a class="btn-shopping-cart" href="https://driedkelps.github.io/twentyfour70v2/cart.html">
+        <a class="btn-shopping-cart" href="https://driedkelps.github.io/twentyfour70v2/cart.html">
             <img src="docs/assets/Website assets/Icons/grocery-cart-icon-7502.png" width="50px" height="40px">
-            <span>0</span></a>
+            <span id="cartqty">0</span></a>
         </div>
     </div>        
 </div>
@@ -58,22 +55,22 @@
 
 <div class="small-container single-product">
     <div class="row">
-        <div class="product" id="PBanana2"></div>
+        <div class="product"></div>
         <div class="col-2">
-            <img src="docs/assets/Website assets/Product Images/pdtimg_5.jpg" alt="Premium White Bananas" 
+            <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_5.jpg" alt="Premium White Bananas" 
             width="100%" height="460px" id="ProductImg"></img>
             <div class="small-img-row">
                 <div class="small-img-col">
-                    <img src="docs/assets/Website assets/Product Images/pdtimg_5.jpg" width="100%" class="small-img">
+                    <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_5.jpg" width="100%" class="small-img">
                 </div>
                 <div class="small-img-col">
-                    <img src="docs/assets/Website assets/Product Images/pdtimg_1.jpg" width="100%" class="small-img">
+                    <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_1.jpg" width="100%" class="small-img">
                 </div>
                 <div class="small-img-col">
-                    <img src="docs/assets/Website assets/Product Images/pdtimg_1.jpg" width="100%" class="small-img">
+                    <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_1.jpg" width="100%" class="small-img">
                 </div>
                 <div class="small-img-col">
-                    <img src="docs/assets/Website assets/Product Images/pdtimg_1.jpg" width="100%" class="small-img">
+                    <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_1.jpg" width="100%" class="small-img">
                 </div>
             </div>
         </div>
@@ -87,7 +84,11 @@
             <input type="text" id="quant-no" value="1" min="1" max="7">
             <div class="btn-addToCart">
             <button id="addCart">Add to cart</button></div>
-
+            <div class="rating">
+                <i id="5" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                <p class="p5" style="display: inline-flex; margin-left: 10px; font-size: 24px; font-weight: 600; color: black;"> error </p>
+                <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+            </div>
             <h3>Product Details <i class="fa fa-indent"></i></h3>
             <br>
             <p>A bunch of bananas. Nothing more, nothing less.</p>
@@ -99,7 +100,7 @@
 <div class="small-container">
     <div class="row row-2">
         <h2>Related Products</h2>
-        <a href="C:/Users/death/Downloads/Digital%20Publishing%20project/product%20page.html" class="btn">See all products ☞</a>
+        <a href="https://driedkelps.github.io/twentyfour70v2/product-p1.html" class="btn">See all products ☞</a>
     </div>
 
 </div>
@@ -113,56 +114,47 @@
 <!----- Latest Products category ----->
 <div class="small-container">
 
-<div class="row-items">
-    <div class="col-4">
-        <img src="docs/assets/Website assets/Product Images/pdtimg_1.jpg" alt="Banana">
-        <h4>Bananas</h4>
-        <div class="rating">
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-heart"></i>
-            <i class="fa-regular fa-heart"></i>
+    <div class="row-items">
+        <div class="col-4">
+            <img src="docs/assets/Website assets/Product Images/pdtimg_1.jpg" alt="Banana">
+            <h4>Bananas</h4>
+            <div class="rating">
+                <i id="1" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                <p class="p1"> error </p>
+                <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+            </div>
+            <p>$3.50</p>
         </div>
-        <p>$3.50</p>
-    </div>
-    <div class="col-4">
-        <img src="docs/assets/Website assets/Product Images/pdtimg_2.jpg" alt="Table">
-        <h4>Table</h4>
-        <div class="rating">
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-heart"></i>
-            <i class="fa-regular fa-heart"></i>
+        <div class="col-4">
+            <img src="docs/assets/Website assets/Product Images/pdtimg_2.jpg" alt="Table">
+            <h4>Table</h4>
+            <div class="rating">
+                <i id="2" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                <p class="p2"> error </p>
+                <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+            </div>
+            <p>$3.50</p>
         </div>
-        <p>$3.50</p>
-    </div>
-    <div class="col-4">
-        <a href="https://driedkelps.github.io/twentyfour70v2/product_2-piece-AA-battery.html">
-        <img src="docs/assets/Website assets/Product Images/pdtimg_3.jpg" alt="AA Battery"></a>        <h4>2-pieces AA Battery</h4>
-        <div class="rating">
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-heart"></i>
-            <i class="fa-regular fa-heart"></i>
+        <div class="col-4">
+            <img src="docs/assets/Website assets/Product Images/pdtimg_3.jpg" alt="AA Battery">
+            <h4>2-pieces AA Battery</h4>
+            <div class="rating">
+                <i id="3" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                <p class="p3"> error </p>
+                <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+            </div>
+            <p>$3.50</p>
         </div>
-        <p>$3.50</p>
-    </div>
-    <div class="col-4">
-        <img src="docs/assets/Website assets/Product Images/pdtimg_4.jpg" alt="Hand Pump">
-        <h4>Hand Pump</h4>
-        <div class="rating">
-            <i onmouseover="myfunction(this)" aria-hidden="true"></i>
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-heart"></i>
-            <i class="fa-regular fa-heart"></i>
+        <div class="col-4">
+            <img src="docs/assets/Website assets/Product Images/pdtimg_4.jpg" alt="Hand Pump">
+            <h4>Hand Pump</h4>
+            <div class="rating">
+                <i id="4" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                <p class="p4"> error </p>
+                <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+            </div>
+            <p>$3.50</p>
         </div>
-        <p>$3.50</p>
-    </div>
     
 
 </div>
@@ -176,17 +168,17 @@
                 <h3>Download Our App</h3>
                 <p>Available on Apple Store and Google Play.</p>
                 <div class="app-logo">
-                    <img src="docs/assets/Website assets/Placeholderimg_1.jpg">
-                    <img src="docs/assets/Website assets/Placeholderimg_1.jpg">
+                    <img style="display: none;" src="docs/assets/Website assets/Placeholderimg_1.jpg">
+                    <img style="display: none;" src="docs/assets/Website assets/Placeholderimg_1.jpg">
                 </div>
             </div>
             <div class="footer-col-2">
                 <img src="docs/assets/Website assets/Logos/shopping site logo_WHITE.png">
-                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                <h2>Your one-stop solution for anything under the sun!</h2>
             </div>
             <div class="footer-col-3">
-                <h3>Useful Links</h3>
-              <ul>
+                <h3 style="display: none;">Useful Links</h3>
+              <ul style="display: none;">
                 <li>Coupons</li>
                 <li>Blog Post</li>
                 <li>Return Policy</li>
@@ -205,8 +197,13 @@
     </div>
     <hr>
     <p class="Copyright"> Copyright 2024</p>
+    <div class="session-timer" style="display: none;">
+        <span class="digits">
+          <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+        </span>
+      </div>
 </div>
-</div>
+
 
 <!---------- js for product gallery ---------->
 
@@ -234,10 +231,9 @@
 
     </script>
 
-
-
+<!----- js ----->
 <script src="docs/assets/js/shopping3.js" async></script>
-
+<script src="docs/assets/js/imagerpo.js" async></script>
 
 </body>
 </html>
