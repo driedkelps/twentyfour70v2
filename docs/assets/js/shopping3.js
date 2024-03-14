@@ -46,7 +46,7 @@ function pageTimer() {
 }
 
 function captureTimer() {
-    if (window.location.href == "file:///C:/Users/death/Downloads/Digital%20Publishing%20project/checkout.html") {
+    if (window.location.href == "https://driedkelps.github.io/twentyfour70v2/checkout.html") {
         tmpSec = localStorage.getItem('secs')
         sec = parseInt(tmpSec,10);
         localStorage.setItem('TimeAtCheckout', sec) 
@@ -183,7 +183,7 @@ checkoutBtn.addEventListener('click', function() {
     if (Math.sign(cartbalance) == -1) {
     alert("Cannot checkout with a negative balance!")
     }else{
-    window.location.replace("C:\\Users\\death\\Downloads\\Digital Publishing project\\checkout.html");
+    window.location.replace("https://driedkelps.github.io/twentyfour70v2/checkout.html");
     }
 stringFinalCartData();
 })
@@ -191,7 +191,7 @@ stringFinalCartData();
 var endpageBtn = document.getElementById('endpage')
 function directToEndPG() {
     endpageBtn.addEventListener('click', function() {
-    window.location.replace("C:\\Users\\death\\Downloads\\Digital Publishing project\\endpage.html");   
+    window.location.replace("https://driedkelps.github.io/twentyfour70v2/endpage.html");   
     })
 }
 
@@ -200,11 +200,11 @@ function directAB(){
     var resultSite = ['SiteA', 'SiteB'][Math.floor(Math.random() * 2)];
     console.log(resultSite)
     if (resultSite == 'SiteA') {
-    window.location.assign("website test_v2 - Copy(use this).html"); 
+    window.location.assign("https://driedkelps.github.io/twentyfour70v2/index_A.html"); 
     //loadModal()
     } else{
     console.log("Go to SiteB") // Non-gamified site is still under development.
-    window.location.assign("website test_v2 - Copy(use this).html");
+    window.location.assign("https://driedkelps.github.io/twentyfour70v2/index_A.html");
     //loadModal()
     } 
 }
@@ -237,7 +237,7 @@ function directAB(){
 
 function directToCheckout2() {
 if(loadTimeout  == undefined || null) {
-    window.location.replace("C:\\Users\\death\\Downloads\\Digital Publishing project\\checkout.html");
+    window.location.replace("https://driedkelps.github.io/twentyfour70v2/checkout.html");
     }
 }
 
