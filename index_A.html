@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Main | TWENTY-FOUR.70</title>
+    <style>
+        body{
+            background: #ffde59;
+        }
+        .rating{
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet"href="docs/assets/css/style.css">
+    <link href="docs/assets/Website assets/Fonts/ERASDEMI.TTF" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="jumbotron-header">
+        <div class="container-center-text">
+            <a class="btn-header" href="https://driedkelps.github.io/twentyfour70v2/index.html#">
+            <img src="docs/assets/Website assets/Logos/shopping site logo_BLACK.png" style="width: 200px" alt="Banner">  
+            </a>    
+                <p>Your one-stop solution for anything under the sun!</p>
+      </div>
+    </div>
+<!--------preloader test---------->
+<div id="modalContainer" style="display: none;">
+<div id="myModal" > 
+    <!-- class="preloadModal" -->
+    <div class="modal-content">
+      <span class="close" onclick="spanEvent()">&times;</span>
+      <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\homepage_splash.jpg" style="height: 400px; width: 400px;">
+    </div> 
+</div>
+</div>
+<!--------navbar---------->
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+        <a class="logo" href="file:///C:/Users/death/Downloads/Digital%20Publishing%20project/website%20test_v2%20-%20Copy(use%20this).html#">
+            <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Logos\shopping site logo_BLACK.png" width="125px" alt="TWENTY-FOUR.70 Online Store">
+        </a>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="C:\Users\death\Downloads\Digital Publishing project\product-p1.html">All Products</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+    <div class="shopper-balance">
+        <p>Balance:</p><p id="user-balance">$24.70</p>
+        </div>
+        <a class="btn-shopping-cart" href="file:///C:/Users/death/Downloads/Digital%20Publishing%20project/cart.html">
+            <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Icons\grocery-cart-icon-7502.png" width="50px" height="40px">
+            <span id="cartqty">0</span></a>
+        </div>
+    </div>        
+</div>
+
+<!--------home splash---------->
+    <div class="row">
+        <div class="col-2">
+            <h1>Anything You Want, Anything You Need, 24/7.</h1>
+            <p>Don't hold back. Shop all you want.<br>At TWENTY-FOUR.70.</p>
+            <a href="C:\Users\death\Downloads\Digital Publishing project\product-p1.html" class="btn">View our top products &#8594;</a>
+
+        </div>
+        <div class="col-2" style="padding-right: 30px;">
+            <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\homepage_splash.jpg" >
+
+        </div>
+    </div>
+
+
+<!----- featured categories ----->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3" style="flex-basis: 30%;">
+                    <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_2.jpg">
+                </div>    
+                <div class="col-3" style="flex-basis: 30%;">
+                    <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_1.jpg">
+                </div>    
+                <div class="col-3" style="flex-basis: 30%;">
+                    <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_4.jpg">
+                </div>  
+            </div>
+        </div>
+    <!----- Rating toggle(remove) ----->
+    <!-- <div class="small-container">
+        <script>myfunction =(icon) => icon.classList.toggle
+            ('fa fa-heart')
+            </script>
+    </div> -->
+    <!----- For You category ----->
+        <h2 class="title">For You</h2>
+        <div class="row-items">
+            <div class="col-4">
+                <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_1.jpg" alt="Banana">
+                <h4>Bananas</h4>
+                <div class="rating">
+                    <i id="1" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                    <p class="p1"> error </p>
+                    <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+                </div>
+                <p>$3.50</p>
+            </div>
+            <div class="col-4">
+                <a href="C:\Users\death\Downloads\Digital Publishing project\product_Table.html">
+                <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_2.jpg" alt="Table"></a>
+                <h4>Table</h4>
+                <div class="rating">
+                    <i id="2" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                    <p class="p2"> error </p>
+                    <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+                </div>
+                <p>$3.50</p>
+            </div>
+            <div class="col-4">
+                <a href="C:\Users\death\Downloads\Digital Publishing project\product_2-piece-AA-battery.html">
+                <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_3.jpg" alt="AA Battery"></a>
+                <h4>2-pieces AA Battery</h4>
+                <div class="rating">
+                    <i id="3" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                    <p class="p3"> error </p>
+                    <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+                </div>
+                <p>$3.50</p>
+            </div>
+            <div class="col-4">
+                <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_4.jpg" alt="Hand Pump">
+                <h4>Hand Pump</h4>
+                <div class="rating">
+                    <i id="4" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                    <p class="p4"> error </p>
+                    <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+                </div>
+                <p>$3.50</p>
+            </div>
+        </div>
+    <!----- Latest Products category ----->
+        <h2 class="title">Latest Products</h2>
+        <div class="row-items">
+            <div class="col-4">
+                <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_1.jpg" alt="Banana">
+                <h4>Bananas</h4>
+                <div class="rating">
+                    <i id="1" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                    <p class="p1"> error </p>
+                    <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+                </div>
+                <p>$3.50</p>
+            </div>
+            <div class="col-4">
+                <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_2.jpg" alt="Table">
+                <h4>Table</h4>
+                <div class="rating">
+                    <i id="2" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                    <p class="p2"> error </p>
+                    <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+                </div>
+                <p>$3.50</p>
+            </div>
+            <div class="col-4">
+                <a href="C:\Users\death\Downloads\Digital Publishing project\product_2-piece-AA-battery.html">
+                <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_3.jpg" alt="AA Battery"></a>
+                <h4>2-pieces AA Battery</h4>
+                <div class="rating">
+                    <i id="3" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                    <p class="p3"> error </p>
+                    <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+                </div>
+                <p>$3.50</p>
+            </div>
+            <div class="col-4">
+                <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_4.jpg" alt="Hand Pump">
+                <h4>Hand Pump</h4>
+                <div class="rating">
+                    <i id="4" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                    <p class="p4"> error </p>
+                    <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+                </div>
+                <p>$3.50</p>
+            </div>
+        </div>
+        <span></span>
+        <div class="row-items">
+            <div class="col-4">
+                <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_1.jpg" alt="Banana">
+                <h4>Bananas</h4>
+                <div class="rating">
+                    <i id="1" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                    <p class="p1"> error </p>
+                    <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+                </div>
+                <p>$3.50</p>
+            </div>
+            <div class="col-4">
+                <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_2.jpg" alt="Table">
+                <h4>Table</h4>
+                <div class="rating">
+                    <i id="2" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                    <p class="p2"> error </p>
+                    <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+                </div>
+                <p>$3.50</p>
+            </div>
+            <div class="col-4">
+                <a href="C:\Users\death\Downloads\Digital Publishing project\product_2-piece-AA-battery.html">
+                <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_3.jpg" alt="AA Battery"></a>
+                    <h4>2-pieces AA Battery</h4>
+                    <div class="rating">
+                        <i id="3" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                        <p class="p3"> error </p>
+                        <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+                    </div>
+                <p>$3.50</p>
+            </div>
+            <div class="col-4">
+                <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_4.jpg" alt="Hand Pump">
+                <h4>Hand Pump</h4>
+                <div class="rating">
+                    <i id="4" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                    <p class="p4"> error </p>
+                    <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+                </div>
+                <p>$3.50</p>
+            </div>
+           
+        </div>
+    </div>
+
+<!----- offer ----->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Product Images\pdtimg_5.jpg" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on TWENTY-FOUR.70!</p>
+                    <h1>Premium <br>White Bananas</h1>
+                    <small>A bunch of bananas. Nothing more, nothing less.</small>
+                    <br><a href="file:///C:/Users/death/Downloads/Digital%20Publishing%20project/product_premium-white-bananas.html" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------- brands --------->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\temp_cone.png">
+                </div>
+                <div class="col-5">
+                    <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\temp_cone.png">
+                </div>
+                <div class="col-5">
+                    <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\temp_cone.png">
+                </div>
+                <div class="col-5">
+                    <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\temp_cone.png">
+                </div>
+                <div class="col-5">
+                    <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\temp_cone.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!---------- footer ---------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Available on Apple Store and Google Play.</p>
+                <div class="app-logo">
+                    <img style="display: none;" src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Placeholderimg_1.jpg">
+                    <img style="display: none;" src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Placeholderimg_1.jpg">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="C:\Users\death\Downloads\Digital Publishing project\Website assets\Logos\shopping site logo_WHITE.png">
+                <h2>Your one-stop solution for anything under the sun!</h2>
+            </div>
+            <div class="footer-col-3">
+                <h3 style="display: none;">Useful Links</h3>
+              <ul style="display: none;">
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>X</li>
+                <li>Instagram</li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="Copyright"> Copyright 2024</p>
+    <div class="session-timer" style="display: none;">
+        <span class="digits">
+          <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+        </span>
+      </div>
+</div>
+
+
+<!----- js for adding items to cart ----->
+<script src="C:\Users\death\Downloads\Digital Publishing project\Website assets\shopping3.js" async></script>
+<script src="C:\Users\death\Downloads\Digital Publishing project\Website assets\imagerpo.js" async></script>
+
+
+</body>
+</html>
