@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!--------CHANGE THIS!!!!----------><!--------CHANGE THIS!!!!----------><!--------CHANGE THIS!!!!---------->
+    <title> Mango | TWENTY-FOUR.70</title> 
+    <style>
+        body{
+            background: #ffde59;
+        }
+        .rating{
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet"href="docs/assets/css/style.css">
+    <link href="docs/assets/Website assets/Fonts/ERASDEMI.TTF" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="jumbotron-header">
+        <div class="container-center-text">
+            <a class="btn-header" href="https://driedkelps.github.io/twentyfour70v2/index_A.html#">
+            <img src="docs/assets/Website assets/Logos/shopping site logo_BLACK.png" style="width: 200px" alt="Banner">  
+            </a>    
+                <p>Your one-stop solution for anything under the sun!</p>
+      </div>
+    </div>
+
+<!--------navbar---------->
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+        <a class="logo" href="https://driedkelps.github.io/twentyfour70v2/index_A.html#">
+            <img src="docs/assets/Website assets/Logos/shopping site logo_BLACK.png" width="125px" alt="TWENTY-FOUR.70 Online Store">
+        </a>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="https://driedkelps.github.io/twentyfour70v2/product-p1.html">All Products</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+    <div class="shopper-balance">
+        <p>Balance:</p><p id="user-balance">$24.70</p>
+        </div>
+        <a class="btn-shopping-cart" href="https://driedkelps.github.io/twentyfour70v2/cart.html">
+            <img src="docs/assets/Website assets/Icons/grocery-cart-icon-7502.png" width="50px" height="40px">
+            <span id="cartqty">0</span></a>
+        </div>
+    </div>        
+</div>
+
+<!--------single product details---------->
+
+<div class="small-container single-product">
+    <div class="row">
+        <div class="product"></div>
+        <div class="col-2">
+            <!--------CHANGE THIS!!!!----------><!--------CHANGE THIS!!!!----------><!--------CHANGE THIS!!!!---------->
+            <img src="docs/assets/Website assets/Product Images/pdtimg_21_col.jpg"  
+            width="100%" height="460px" id="ProductImg"></img>
+            <div class="small-img-row">
+                <div class="small-img-col">
+            <!--------CHANGE THIS!!!!----------><!--------CHANGE THIS!!!!----------><!--------CHANGE THIS!!!!---------->
+                    <img src="docs/assets/Website assets/Product Images/pdtimg_21_col.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="docs/assets/Website assets/Product Images/pdtimg_21_col.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="docs/assets/Website assets/Product Images/pdtimg_21_col.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="docs/assets/Website assets/Product Images/pdtimg_21_col.jpg" width="100%" class="small-img">
+                </div>
+            </div>
+        </div>
+        <div class="col-2-single">
+            <!--------CHANGE THIS!!!!----------><!--------CHANGE THIS!!!!----------><!--------CHANGE THIS!!!!---------->
+            <h3>Consumables / Fruits</p>
+            <h1 class="productName">Mango</h1>
+            <div class="productPrice"><h4>$1.50</h4></div>
+            <!--------CHANGE THIS!!!!----------><!--------CHANGE THIS!!!!----------><!--------CHANGE THIS!!!!---------->
+            <h3>Quantity</h3>
+            <button id="plus">+</button>
+            <button id="minus">-</button>
+            <input type="text" id="quant-no" value="1" min="1" max="7">
+            <div class="btn-addToCart">
+            <button id="addCart">Add to cart</button></div>
+            <div class="rating">
+            <!--------CHANGE THIS!!!!----------><!--------CHANGE THIS!!!!----------><!--------CHANGE THIS!!!!---------->                
+                <i id="3" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                <p class="p3" style="display: inline-flex; margin-left: 10px; font-size: 24px; font-weight: 600; color: black;"> error </p>
+                <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+            </div>
+            <h3>Product Details <i class="fa fa-indent"></i></h3>
+            <br>
+            <!--------CHANGE THIS!!!!----------><!--------CHANGE THIS!!!!----------><!--------CHANGE THIS!!!!---------->
+            <p>Fresh mango.</p>
+        </div>
+    </div>
+</div>
+
+<!--------title---------->
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <a href="https://driedkelps.github.io/twentyfour70v2/product-p1.html" class="btn">See all products ☞</a>
+    </div>
+
+</div>
+
+<!----- Rating toggle ----->
+<div class="small-container">
+    <script>myfunction =(icon) => icon.classList.toggle
+        ('fa fa-heart')
+        </script>
+</div>
+<!----- Latest Products category ----->
+<div class="small-container">
+
+    <div class="row-items">
+        <div class="col-4">
+            <img src="docs/assets/Website assets/Product Images/pdtimg_1_col.jpg" alt="Banana">
+            <h4>Bananas</h4>
+            <div class="rating">
+                <i id="1" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                <p class="p1"> error </p>
+                <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+            </div>
+            <p>$3.50</p>
+        </div>
+        <div class="col-4">
+            <img src="docs/assets/Website assets/Product Images/pdtimg_2.jpg" alt="Table">
+            <h4>Table</h4>
+            <div class="rating">
+                <i id="2" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                <p class="p2"> error </p>
+                <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+            </div>
+            <p>$3.50</p>
+        </div>
+        <div class="col-4">
+            <img src="docs/assets/Website assets/Product Images/pdtimg_3.jpg" alt="AA Battery">
+            <h4>2-pieces AA Battery</h4>
+            <div class="rating">
+                <i id="3" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                <p class="p3"> error </p>
+                <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+            </div>
+            <p>$3.50</p>
+        </div>
+        <div class="col-4">
+            <img src="docs/assets/Website assets/Product Images/pdtimg_4.jpg" alt="Hand Pump">
+            <h4>Hand Pump</h4>
+            <div class="rating">
+                <i id="4" onclick="ratingChange(this)" class="fa-regular fa-heart"></i>
+                <p class="p4"> error </p>
+                <i class="fa-solid fa-heart" style="display: none;" aria-hidden="true"></i>
+            </div>
+            <p>$3.50</p>
+        </div>
+    
+
+</div>
+</div>
+
+<!---------- footer ---------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Available on Apple Store and Google Play.</p>
+                <div class="app-logo">
+                    <img style="display: none;" src="docs/assets/Website assets/Placeholderimg_1.jpg">
+                    <img style="display: none;" src="docs/assets/Website assets/Placeholderimg_1.jpg">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="docs/assets/Website assets/Logos/shopping site logo_WHITE.png">
+                <h2>Your one-stop solution for anything under the sun!</h2>
+            </div>
+            <div class="footer-col-3">
+                <h3 style="display: none;">Useful Links</h3>
+              <ul style="display: none;">
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>X</li>
+                <li>Instagram</li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="Copyright"> Copyright 2024</p>
+    <div class="session-timer" style="display: none;">
+        <span class="digits">
+          <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+        </span>
+      </div>
+</div>
+
+<!---------- js for product gallery ---------->
+
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+            SmallImg[0].onmouseover = function()
+            {
+                ProductImg.src = SmallImg[0].src;
+            }
+            SmallImg[1].onmouseover = function()
+            {
+                ProductImg.src = SmallImg[1].src;
+            }
+            SmallImg[2].onclick = function()
+            {
+                ProductImg.src = SmallImg[2].src;
+            }
+            SmallImg[3].onclick = function()
+            {
+                ProductImg.src = SmallImg[3].src;
+            }
+
+
+    </script>
+
+
+<!----- js ----->
+<script src="docs/assets/js/shopping3.js" async></script>
+<script src="docs/assets/js/imagerpo.js" async></script>
+
+
+</body>
+</html>
