@@ -182,55 +182,55 @@ let LikesDecoration = function(event) {
     htmlp10.forEach(p10 => { p10.textContent = result10; });
     var result11 = localStorage.getItem("productimg10") ||productimg[10].Likes;
     htmlp11 = document.querySelectorAll(".p11")
-    htmlp11.forEach(p11 => { p10.textContent = result11; });
+    htmlp11.forEach(p11 => { p11.textContent = result11; });
     var result12 = localStorage.getItem("productimg11") ||productimg[11].Likes;
     htmlp12 = document.querySelectorAll(".p12")
-    htmlp12.forEach(p12 => { p10.textContent = result12; });
+    htmlp12.forEach(p12 => { p12.textContent = result12; });
     var result13 = localStorage.getItem("productimg12") ||productimg[12].Likes;
     htmlp13 = document.querySelectorAll(".p13")
-    htmlp13.forEach(p13 => { p10.textContent = result13; });
+    htmlp13.forEach(p13 => { p13.textContent = result13; });
     var result14 = localStorage.getItem("productimg13") ||productimg[13].Likes;
     htmlp14 = document.querySelectorAll(".p14")
-    htmlp14.forEach(p14 => { p10.textContent = result14; });
+    htmlp14.forEach(p14 => { p14.textContent = result14; });
     var result15 = localStorage.getItem("productimg14") ||productimg[14].Likes;
     htmlp15 = document.querySelectorAll(".p15")
-    htmlp15.forEach(p15 => { p10.textContent = result15; }); 
+    htmlp15.forEach(p15 => { p15.textContent = result15; }); 
     var result16 = localStorage.getItem("productimg15") ||productimg[15].Likes;
     htmlp16 = document.querySelectorAll(".p16")
-    htmlp16.forEach(p16 => { p10.textContent = result16; });
+    htmlp16.forEach(p16 => { p16.textContent = result16; });
     var result17 = localStorage.getItem("productimg16") ||productimg[16].Likes;
     htmlp17 = document.querySelectorAll(".p17")
-    htmlp17.forEach(p17 => { p10.textContent = result17; });
+    htmlp17.forEach(p17 => { p17.textContent = result17; });
     var result18 = localStorage.getItem("productimg17") ||productimg[17].Likes;
     htmlp18 = document.querySelectorAll(".p18")
-    htmlp18.forEach(p18 => { p10.textContent = result18; });
+    htmlp18.forEach(p18 => { p18.textContent = result18; });
     var result19 = localStorage.getItem("productimg18") ||productimg[18].Likes;
     htmlp19 = document.querySelectorAll(".p19")
-    htmlp19.forEach(p19 => { p10.textContent = result19; });
+    htmlp19.forEach(p19 => { p19.textContent = result19; });
     var result20 = localStorage.getItem("productimg19") ||productimg[19].Likes;
     htmlp20 = document.querySelectorAll(".p20")
-    htmlp20.forEach(p20 => { p10.textContent = result20; });
+    htmlp20.forEach(p20 => { p20.textContent = result20; });
     var result21 = localStorage.getItem("productimg20") ||productimg[20].Likes;
     htmlp21 = document.querySelectorAll(".p21")
-    htmlp21.forEach(p21 => { p10.textContent = result21; });
+    htmlp21.forEach(p21 => { p21.textContent = result21; });
     var result22 = localStorage.getItem("productimg21") ||productimg[21].Likes;
     htmlp22 = document.querySelectorAll(".p22")
-    htmlp22.forEach(p22 => { p10.textContent = result22; });
+    htmlp22.forEach(p22 => { p22.textContent = result22; });
     var result23 = localStorage.getItem("productimg22") ||productimg[22].Likes;
     htmlp23 = document.querySelectorAll(".p23")
-    htmlp23.forEach(p23 => { p10.textContent = result23; });
+    htmlp23.forEach(p23 => { p23.textContent = result23; });
     var result24 = localStorage.getItem("productimg23") ||productimg[23].Likes;
     htmlp24 = document.querySelectorAll(".p24")
-    htmlp24.forEach(p24 => { p10.textContent = result24; });
+    htmlp24.forEach(p24 => { p24.textContent = result24; });
     var result25 = localStorage.getItem("productimg24") ||productimg[24].Likes;
     htmlp25 = document.querySelectorAll(".p25")
-    htmlp25.forEach(p25 => { p10.textContent = result25; });
+    htmlp25.forEach(p25 => { p25.textContent = result25; });
     var result26 = localStorage.getItem("productimg25") ||productimg[25].Likes;
     htmlp26 = document.querySelectorAll(".p26")
-    htmlp26.forEach(p26 => { p10.textContent = result26; });
+    htmlp26.forEach(p26 => { p26.textContent = result26; });
     var result27 = localStorage.getItem("productimg26") ||productimg[26].Likes;
     htmlp27 = document.querySelectorAll(".p27")
-    htmlp27.forEach(p27 => { p10.textContent = result27; });
+    htmlp27.forEach(p27 => { p27.textContent = result27; });
 
     }else {
     return
