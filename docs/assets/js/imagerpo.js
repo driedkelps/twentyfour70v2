@@ -87,13 +87,13 @@ const productimg = [
         id: 15,
         name: "Phone Case Type A (for iPhone 15 Pro Max)",
         Likes: 10,
-        imgSrc: 'docs/assets/Website assets/Product Images/pdtimg_15.jpg',
+        imgSrc: 'docs/assets/Website assets/Product Images/pdtimg_15_col.jpg',
     },
     {
         id: 16,
         name: "Phone Case Type B (for iPhone 15 Pro Max)",
         Likes: 12,
-        imgSrc: 'docs/assets/Website assets/Product Images/pdtimg_16.jpg',
+        imgSrc: 'docs/assets/Website assets/Product Images/pdtimg_16_col.jpg',
     },
     {
         id: 17,
