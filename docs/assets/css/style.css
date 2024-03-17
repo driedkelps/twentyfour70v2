@@ -850,10 +850,10 @@ th:last-child{
     right: 0;
   }
 
-#closemsg-btn {
-    position: inherit;
-    margin-left: 360px;
-}
+/* #closemsg-btn {
+     position: inherit;
+    margin-left: 360px; 
+} */
 
 /*----------------End of Product Ranking page----------------*/
         /* margin-left: 35%;
