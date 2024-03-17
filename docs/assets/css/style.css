@@ -827,7 +827,6 @@ th:last-child{
     bottom: -300px;
     color: white;
     cursor: pointer;
-    position: absolute;
 }
 .btn-endpage a{
     cursor: pointer;
@@ -850,6 +849,11 @@ th:last-child{
     opacity: 1;
     right: 0;
   }
+
+#closemsg-btn {
+    position: inherit;
+    margin-left: 360px;
+}
 
 /*----------------End of Product Ranking page----------------*/
         /* margin-left: 35%;
