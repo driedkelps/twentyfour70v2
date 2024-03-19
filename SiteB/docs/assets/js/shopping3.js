@@ -46,7 +46,7 @@ function pageTimer() {
 }
 
 function captureTimer() {
-    if (window.location.href == "file:///C:/Users/death/Downloads/Digital%20Publishing%20project/checkout.html") {
+    if (window.location.href == "https://driedkelps.github.io/twentyfour70v2/SiteB/checkout.html") {
         tmpSec = localStorage.getItem('secs')
         sec = parseInt(tmpSec,10);
         localStorage.setItem('TimeAtCheckout', sec) 
@@ -151,22 +151,89 @@ let LikesDecoration = function(event) {
     if (localStorage.getItem("HeartTicker") == "A") {
     var result1 = localStorage.getItem("productimg0") || productimg[0].Likes;
     htmlp1 = document.querySelectorAll(".p1")
-    htmlp1.forEach(p1 => { p1.textContent = result1; });
+    htmlp1.forEach(p1 => { p1.textContent = " "; });
     var result2 = localStorage.getItem("productimg1") || productimg[1].Likes;
     htmlp2 = document.querySelectorAll(".p2")
-    htmlp2.forEach(p2 => { p2.textContent = result2; });
+    htmlp2.forEach(p2 => { p2.textContent = " "; });
     var result3 = localStorage.getItem("productimg2") || productimg[2].Likes;
     htmlp3 = document.querySelectorAll(".p3")
-    htmlp3.forEach(p3 => { p3.textContent = result3; });
+    htmlp3.forEach(p3 => { p3.textContent = " "; });
     var result4 = localStorage.getItem("productimg3") || productimg[3].Likes;
     htmlp4 = document.querySelectorAll(".p4")
-    htmlp4.forEach(p4 => { p4.textContent = result4; });
+    htmlp4.forEach(p4 => { p4.textContent = " "; });
     var result5 = localStorage.getItem("productimg4") ||productimg[4].Likes;
     htmlp5 = document.querySelectorAll(".p5")
-    htmlp5.forEach(p5 => { p5.textContent = result5; });
+    htmlp5.forEach(p5 => { p5.textContent = " "; });
 
-    }else {
-    return
+    var result6 = localStorage.getItem("productimg5") || productimg[5].Likes;
+    htmlp6 = document.querySelectorAll(".p6")
+    htmlp6.forEach(p6 => { p6.textContent = " "; });
+    var result7 = localStorage.getItem("productimg6") || productimg[6].Likes;
+    htmlp7 = document.querySelectorAll(".p7")
+    htmlp7.forEach(p7 => { p7.textContent = " "; });
+    var result8 = localStorage.getItem("productimg7") || productimg[7].Likes;
+    htmlp8 = document.querySelectorAll(".p8")
+    htmlp8.forEach(p8 => { p8.textContent = " "; });
+    var result9 = localStorage.getItem("productimg8") || productimg[8].Likes;
+    htmlp9 = document.querySelectorAll(".p9")
+    htmlp9.forEach(p9 => { p9.textContent = " "; });
+    var result10 = localStorage.getItem("productimg9") ||productimg[9].Likes;
+    htmlp10 = document.querySelectorAll(".p10")
+    htmlp10.forEach(p10 => { p10.textContent = " "; });
+    var result11 = localStorage.getItem("productimg10") ||productimg[10].Likes;
+    htmlp11 = document.querySelectorAll(".p11")
+    htmlp11.forEach(p11 => { p11.textContent = " "; });
+    var result12 = localStorage.getItem("productimg11") ||productimg[11].Likes;
+    htmlp12 = document.querySelectorAll(".p12")
+    htmlp12.forEach(p12 => { p12.textContent = " "; });
+    var result13 = localStorage.getItem("productimg12") ||productimg[12].Likes;
+    htmlp13 = document.querySelectorAll(".p13")
+    htmlp13.forEach(p13 => { p13.textContent = " "; });
+    var result14 = localStorage.getItem("productimg13") ||productimg[13].Likes;
+    htmlp14 = document.querySelectorAll(".p14")
+    htmlp14.forEach(p14 => { p14.textContent = " "; });
+    var result15 = localStorage.getItem("productimg14") ||productimg[14].Likes;
+    htmlp15 = document.querySelectorAll(".p15")
+    htmlp15.forEach(p15 => { p15.textContent = " "; });
+    var result16 = localStorage.getItem("productimg15") ||productimg[15].Likes;
+    htmlp16 = document.querySelectorAll(".p16")
+    htmlp16.forEach(p16 => { p16.textContent = " "; });
+    var result17 = localStorage.getItem("productimg16") ||productimg[16].Likes;
+    htmlp17 = document.querySelectorAll(".p17")
+    htmlp17.forEach(p17 => { p17.textContent = " "; });
+    var result18 = localStorage.getItem("productimg17") ||productimg[17].Likes;
+    htmlp18 = document.querySelectorAll(".p18")
+    htmlp18.forEach(p18 => { p18.textContent = " "; });
+    var result19 = localStorage.getItem("productimg18") ||productimg[18].Likes;
+    htmlp19 = document.querySelectorAll(".p19")
+    htmlp19.forEach(p19 => { p19.textContent = " "; });
+    var result20 = localStorage.getItem("productimg19") ||productimg[19].Likes;
+    htmlp20 = document.querySelectorAll(".p20")
+    htmlp20.forEach(p20 => { p20.textContent = " "; });
+    var result21 = localStorage.getItem("productimg20") ||productimg[20].Likes;
+    htmlp21 = document.querySelectorAll(".p21")
+    htmlp21.forEach(p21 => { p21.textContent = " "; });
+    var result22 = localStorage.getItem("productimg21") ||productimg[21].Likes;
+    htmlp22 = document.querySelectorAll(".p22")
+    htmlp22.forEach(p22 => { p22.textContent = " "; });
+    var result23 = localStorage.getItem("productimg22") ||productimg[22].Likes;
+    htmlp23 = document.querySelectorAll(".p23")
+    htmlp23.forEach(p23 => { p23.textContent = " "; });
+    var result24 = localStorage.getItem("productimg23") ||productimg[23].Likes;
+    htmlp24 = document.querySelectorAll(".p24")
+    htmlp24.forEach(p24 => { p24.textContent = " "; });
+    var result25 = localStorage.getItem("productimg24") ||productimg[24].Likes;
+    htmlp25 = document.querySelectorAll(".p25")
+    htmlp25.forEach(p25 => { p25.textContent = " "; });
+    var result26 = localStorage.getItem("productimg25") ||productimg[25].Likes;
+    htmlp26 = document.querySelectorAll(".p26")
+    htmlp26.forEach(p26 => { p26.textContent = " "; });
+    var result27 = localStorage.getItem("productimg26") ||productimg[26].Likes;
+    htmlp27 = document.querySelectorAll(".p27")
+    htmlp27.forEach(p27 => { p27.textContent = " "; });
+
+    // }else {
+    // return
     }
 
 }
@@ -183,7 +250,7 @@ checkoutBtn.addEventListener('click', function() {
     if (Math.sign(cartbalance) == -1) {
     alert("Cannot checkout with a negative balance!")
     }else{
-    window.location.replace("C:\\Users\\death\\Downloads\\Digital Publishing project\\checkout.html");
+    window.location.replace("https://driedkelps.github.io/twentyfour70v2/SiteB/checkout.html");
     }
 stringFinalCartData();
 })
@@ -191,7 +258,7 @@ stringFinalCartData();
 var endpageBtn = document.getElementById('endpage')
 function directToEndPG() {
     endpageBtn.addEventListener('click', function() {
-    window.location.replace("C:\\Users\\death\\Downloads\\Digital Publishing project\\endpage.html");   
+    window.location.replace("https://driedkelps.github.io/twentyfour70v2/endpage.html");   
     })
 }
 
@@ -200,46 +267,21 @@ function directAB(){
     var resultSite = ['SiteA', 'SiteB'][Math.floor(Math.random() * 2)];
     console.log(resultSite)
     if (resultSite == 'SiteA') {
-    window.location.assign("website test_v2 - Copy(use this).html"); 
+    window.location.assign("https://driedkelps.github.io/twentyfour70v2/index_A.html"); 
     //loadModal()
     } else{
-    console.log("Go to SiteB") // Non-gamified site is still under development.
-    window.location.assign("website test_v2 - Copy(use this).html");
+    console.log("Go to SiteB") 
+    window.location.assign("https://driedkelps.github.io/twentyfour70v2/SiteB/index_B.html");
     //loadModal()
     } 
 }
 
-// // preloader modal (scrapped)
-// var modalId = document.getElementById("modalContainer");
-// var modal = document.getElementsByClassName("preloadModal");
-// //var modalstyle = modal.currentStyle || window.getComputedStyle(modal);
-// var spanBtn = document.getElementsByClassName("close")[0];
-
-// function loadModal() {
-// const preloadModal = document.createElement("div")
-// document.modalId.appendChild(preloadModal)
-// //document.getElementsByClassName("preloadModal").style.display = "block";
-// }
-// function spanEvent() {
-//     modalId.classList.remove("preloadModal");
-// }
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         modalId.classList.remove("preloadModal");
-//     }
-//   }
-// window.onclick = function(event) {
-//     if (event.target == spanBtn) {
-//         modalId.classList.remove("preloadModal");
-//     }
-//   }
-
-
 function directToCheckout2() {
 if(loadTimeout  == undefined || null) {
-    window.location.replace("C:\\Users\\death\\Downloads\\Digital Publishing project\\checkout.html");
+    window.location.replace("https://driedkelps.github.io/twentyfour70v2/SiteB/checkout.html");
     }
 }
+
 
 function removeCartItemBtnLoop() {
 var removeCartItemButtons = document.getElementsByClassName('btn-danger')
@@ -322,21 +364,6 @@ removeCartItemBtnLoop()
 updateCartTotal()
 
 
-
-// var newitemname = document.getElementById("newitemrow").getElementsByClassName("item-name")[0].innerText
-// var newitemquantity = document.getElementById("newitemrow").getElementsByClassName("item-quantity")[0].defaultValue
-// var newsubtotalPrice = document.getElementById("newitemrow").getElementsByClassName("subtotalPrice")[0].innerText
-// newitemrowData = [newitemname, newitemquantity, newsubtotalPrice]
-// realtimeCart = JSON.parse(window.localStorage.getItem("realtimeCart"))
-// RTCpdt = realtimeCart.Product;
-// RTCqty = realtimeCart.Quantity;
-// RTCprice = realtimeCart.Price;
-
-
-
-// var dataArray = Object.keys(realtimeCart).map(function(k){return realtimeCart[k]});
-// console.log(dataArray)
-
 function replaceItemDetails1() {
 let cartlist = document.querySelectorAll(".newitemrow");
 for (var i = 0, x = 0; i < realtimeCart.length, x < cartlist.length; i++, x++ ) {
@@ -417,23 +444,7 @@ function updateCartTotal() {
     //updatebalanceforCartBonus()
     //updateSpendingBar()
 
-function updateSpendingBar() {
-    // var i = 0;
-    // if (i == 0) {
-    // i = 1;
-    // var elem = document.getElementById("spendingBar");
-    // var width = 1;
-    // var id = setInterval(frame, 10);
-    //     function frame() {
-    //         if (width >= 100) {
-    //         clearInterval(id);
-    //         i = 0;
-    //         } else {
-    //         width++;
-    //         elem.style.width = width + "%";
-    //         }
-    //     }
-    // }     
+function updateSpendingBar() {   
     var spendPercent = 0;
     document.getElementById("spendingBar").style.width = spendPercent + "%";
     balance = JSON.parse(localStorage.getItem("userbalance"));
@@ -497,15 +508,6 @@ function updateSpendingBar() {
     // getBalance()
     }
 }
-    // if (localStorage.getItem("realtimeCart") != undefined || null) {
-    //     realtimeCart = JSON.parse(window.localStorage.getItem("realtimeCart"))
-    //     if (realtimeCart.length != 0) {
-    //         result = true
-    //     }
-    // }else {
-    //     return
-    // }
-
 
 // add to cart 
 var btnItemQtyMinus = document.getElementById('minus')
