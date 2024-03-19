@@ -441,7 +441,7 @@ function updateCartTotal() {
     document.getElementsByClassName('cart-balance')[0].innerText = '$' + parseFloat(balancevalue - total).toFixed(2)
     window.localStorage.setItem("userbalance", JSON.stringify(balancevalue))
 }
-    //updatebalanceforCartBonus()
+    updatebalanceforCartBonus()
     //updateSpendingBar()
 
 function updateSpendingBar() {   
