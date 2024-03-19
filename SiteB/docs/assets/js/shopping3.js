@@ -22,8 +22,8 @@ window.onload = function() {
     captureTimer()
     getBalance()
     getCartData()
-    LikesDecoration()
     updateCartQty()
+    LikesDecoration()
     updateCartTable()
     updateCartTotal()
  }
@@ -81,24 +81,6 @@ function updateRatingCount(event) {
     //var ratingItemName = 
     var ratingBtn = document.getElementsByClassName("fa-regular");
     if (localStorage.getItem("HeartTicker") == "A") {
-    //ratingBtn.addEventListener('mouse', ratingChange)
-        for (var y = 0; y < productimg.length; y++ ) {
-        var idcheck = (productimg[y].id == findId) //.getAttribute("id")
-            if ((idcheck) == true) {
-            if (localStorage.getItem("productimg"+[y]) != undefined || null) {
-                idcheckresult = localStorage.getItem("productimg"+[y])
-                result = parseInt(idcheckresult) +1
-                localStorage.setItem("productimg"+[y], result)
-                //console.log(result); 
-
-            } else {
-                idcheckresult = productimg[y].Likes
-                result = parseInt(idcheckresult) +1
-                localStorage.setItem("productimg"+[y], result)
-                //console.log(result);
-                }
-        }
-    }
     LikesDecoration()
     // bonus for liking items
     HeartTicker = localStorage.getItem("HeartTicker");
@@ -121,26 +103,6 @@ function updateRatingCount(event) {
             }else {
             window.localStorage.setItem("Likecount", JSON.stringify(count))
             } 
-      
-///////////
-    }else {
-        count = JSON.parse(localStorage.getItem("Likecount"))
-        if (HeartTicker == "A") {
-            count++
-            localStorage.setItem("HeartTicker", "B");
-            } if (count >= 5){
-            balance = balance+likeBonus
-            balance = parseFloat(balance)
-            //balance = parseFloat(balance).toFixed(1)
-            window.localStorage.setItem("userbalance", JSON.stringify(balance))
-            getBalance()
-            window.localStorage.setItem("Likecount", JSON.stringify(count))
-            console.log("ok2")
-            }else {
-            window.localStorage.setItem("Likecount", JSON.stringify(count))
-        }
-    }
-//////////
 }else {
     localStorage.setItem("HeartTicker", "A")    
         return
