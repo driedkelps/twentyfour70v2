@@ -270,8 +270,8 @@ function directAB(){
     window.location.assign("https://driedkelps.github.io/twentyfour70v2/index_A.html"); 
     //loadModal()
     } else{
-    console.log("Go to SiteB") // Non-gamified site is still under development.
-    window.location.assign("https://driedkelps.github.io/twentyfour70v2/index_A.html");
+    console.log("Go to SiteB") 
+    window.location.assign("https://driedkelps.github.io/twentyfour70v2/SiteB/index_B.html");
     //loadModal()
     } 
 }
