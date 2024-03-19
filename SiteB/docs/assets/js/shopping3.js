@@ -104,7 +104,7 @@ function updateRatingCount(event) {
     HeartTicker = localStorage.getItem("HeartTicker");
     balance = JSON.parse(localStorage.getItem("userbalance"));
     balance = parseFloat(balance)
-    likeBonus = 0.20
+    likeBonus = 0.00
     if (localStorage.getItem("Likecount") == undefined || null) {
             let count = 0; 
         if (HeartTicker == "A") {
@@ -414,8 +414,8 @@ function updateCartTotal() {
     document.getElementsByClassName('cart-balance')[0].innerText = '$' + parseFloat(balancevalue - total).toFixed(2)
     window.localStorage.setItem("userbalance", JSON.stringify(balancevalue))
 }
-    updatebalanceforCartBonus()
-    updateSpendingBar()
+    //updatebalanceforCartBonus()
+    //updateSpendingBar()
 
 function updateSpendingBar() {
     // var i = 0;
@@ -694,21 +694,21 @@ spendTotal = document.getElementById("checkoutTotal")
     para.appendChild(node);
     spendTotal.append(para)
 //total additional currency<TOTAL BONUS MONEY ACCRUED>
-finalUserBalance = JSON.parse(localStorage.getItem("userbalance"));
-finalBonus = document.getElementById("checkoutBonus");
-bonusAccrued = finalUserBalance-24.7;
-bonusAccrued = bonusAccrued.toFixed(2);
-    para = document.createElement("h4");
-    const Bnode = document.createTextNode("$"+bonusAccrued);
-    para.appendChild(Bnode);
-    finalBonus.append(para)
+        // finalUserBalance = JSON.parse(localStorage.getItem("userbalance"));
+        // finalBonus = document.getElementById("checkoutBonus");
+        // bonusAccrued = finalUserBalance-24.7;
+        // bonusAccrued = bonusAccrued.toFixed(2);
+        //     para = document.createElement("h4");
+        //     const Bnode = document.createTextNode("$"+bonusAccrued);
+        //     para.appendChild(Bnode);
+        //     finalBonus.append(para)
 //total likes<TOTAL NUMBER OF LIKES GIVEN>
-finalLikesCount = JSON.parse(localStorage.getItem("Likecount"));
-finalBonus = document.getElementById("checkoutLikes");
-    para = document.createElement("h4");
-    const Lnode = document.createTextNode(finalLikesCount);
-    para.appendChild(Lnode);
-    finalBonus.append(para)
+        // finalLikesCount = JSON.parse(localStorage.getItem("Likecount"));
+        // finalBonus = document.getElementById("checkoutLikes");
+        //     para = document.createElement("h4");
+        //     const Lnode = document.createTextNode(finalLikesCount);
+        //     para.appendChild(Lnode);
+        //     finalBonus.append(para)
 }
 
 
