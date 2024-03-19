@@ -262,6 +262,19 @@ function directToEndPG() {
     })
 }
 
+// alert after a/b page routing
+        // function ABroutingalert() {
+        //     if (window.location.href == "https://driedkelps.github.io/twentyfour70v2/index_A.html" || "https://driedkelps.github.io/twentyfour70v2/SiteB/index_B.html") {
+        //         if (window.location.href == "https://driedkelps.github.io/twentyfour70v2/index_A.html") {
+        //             return
+        //         }else if (window.location.href == "https://driedkelps.github.io/twentyfour70v2/SiteB/index_B.html"){
+        //             alert("For markers only - Please visit this link instead: https://driedkelps.github.io/twentyfour70v2/index_A.html")
+        //         }
+        //     } else {
+        //         return
+        //     }
+        // }
+
 // landing page controls(for a/b testing)
 function directAB(){
     var resultSite = ['SiteA', 'SiteB'][Math.floor(Math.random() * 2)];
