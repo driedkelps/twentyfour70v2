@@ -67,7 +67,7 @@ const productimg = [
     },
     {
         id: 12,
-        name: "Facial Mask",
+        name: "Facial Masks",
         Likes: 35,
         imgSrc: 'docs/assets/Website assets/Product Images/pdtimg_12.jpg',
     },
