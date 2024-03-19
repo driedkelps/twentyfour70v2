@@ -22,6 +22,7 @@ window.onload = function() {
     captureTimer()
     getBalance()
     getCartData()
+    LikesDecoration()
     updateCartQty()
     updateCartTable()
     updateCartTotal()
