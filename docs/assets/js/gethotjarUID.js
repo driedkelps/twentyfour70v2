@@ -5,7 +5,6 @@ function getHotjarID() {
     document.getElementById("hotjarid").textContent = outputhjUID;
     }
 console.log(outputhjUID)
-}
 ////////////////////////////
     // function stringHotjarID() {
     //     if (typeof (hj) != "undefined" && hj.hasOwnProperty("globals")) {
