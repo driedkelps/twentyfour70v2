@@ -16,6 +16,8 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+<!----- js for getting hotjarID ----->
+<script src="docs/assets/js/gethotjarUID.js" async></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -125,15 +127,7 @@
       </div>
 </div>
 
-<!----- js for getting hotjarID ----->
-<script> 
-    var hjUID = JSON.parse(localStorage.getItem("hjActiveViewportIds"))[0].id
-    outputhjUID = hjUID.split("-").shift();
-    document.getElementById("hotjarid").textContent = outputhjUID
-    
-    console.log(document.getElementById("hotjarid").innerText)
-    </script>
-<!-----<script src="docs/assets/js/gethotjarUID.js" async></script>
+
 <!----- js ----->
 <!-----<script src="docs/assets/js/shopping3.js" async></script>
 
