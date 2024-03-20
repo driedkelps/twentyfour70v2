@@ -866,7 +866,7 @@ th:last-child{
     background-color: #ff6831; 
     cursor: pointer;
 }
-.endpage-container #generateHJUID:active{
+.endpage-container #generateHJUID:hover{
     background-color: #00bf62;
 }
 
