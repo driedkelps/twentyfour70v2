@@ -1,4 +1,4 @@
-var generateIDBtn = document.getElementById('generateHJUID');
+
 function getHotjarID() {
     var hjUID = JSON.parse(localStorage.getItem("hjActiveViewportIds"))[0].id;
     outputhjUID = hjUID.split("-").shift();
