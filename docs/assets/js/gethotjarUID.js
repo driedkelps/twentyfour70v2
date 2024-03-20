@@ -1,4 +1,4 @@
-function getHotjarID() {
+(function getHotjarID() {
 try {
   if (typeof (hj) != "undefined" && hj.hasOwnProperty("globals")) {
     var hjUID = JSON.parse(localStorage.getItem("hjActiveViewportIds"))[0].id;
@@ -9,4 +9,4 @@ try {
       /** ignore **/
     }
 console.log(document.getElementById("hotjarid").innerText)
-}
+})()
