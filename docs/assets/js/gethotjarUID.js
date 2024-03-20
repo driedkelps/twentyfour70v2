@@ -4,5 +4,5 @@ if (typeof (hj) != "undefined" && hj.hasOwnProperty("globals")) {
     outputhjUID = hjUID.split("-").shift();
     document.getElementById("hotjarid").textContent = outputhjUID;
   }
-cone.log(outputhjUID)
+console.log(outputhjUID)
 }
