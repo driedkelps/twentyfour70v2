@@ -1,4 +1,9 @@
-window.onload = function getHotjarUID() {
+window.onload = function() {
+  getHotjarUID()
+}
+  
+  
+function getHotjarUID() {
 var hjUID = JSON.parse(localStorage.getItem("hjActiveViewportIds")).id
 outputhjUID = hjUID.split("-").shift();
 document.getElementById("hotjarid").textContent = outputhjUID
