@@ -1,13 +1,13 @@
-    // var generateIDBtn = document.getElementById('generateHJUID');
-    // generateIDBtn.addEventListener('click', function(event) {getHotjarID(event)});
-    // function getHotjarID(event) {
-    //     if (typeof (hj) != "undefined" && hj.hasOwnProperty("globals")) {
-    //     var hjUID = JSON.parse(localStorage.getItem("hjActiveViewportIds"))[0].id;
-    //     outputhjUID = hjUID.split("-").shift();
-    //     document.getElementById("hotjarid").textContent = outputhjUID;
-    //      }
-    // console.log(outputhjUID)
-    // }
+var generateIDBtn = document.getElementById('generateHJUID');
+generateIDBtn.addEventListener('click', function(event) {getHotjarID(event)});
+function getHotjarID(event) {
+    if (typeof (hj) != "undefined" && hj.hasOwnProperty("globals")) {
+    var hjUID = JSON.parse(localStorage.getItem("hjActiveViewportIds"))[0].id;
+    outputhjUID = hjUID.split("-").shift();
+    document.getElementById("hotjarid").textContent = outputhjUID;
+    }
+console.log(outputhjUID)
+}
 ////////////////////////////
     // function stringHotjarID() {
     //     if (typeof (hj) != "undefined" && hj.hasOwnProperty("globals")) {
@@ -22,9 +22,9 @@
     //     console.log(sessionID)
     // }
 
-if (typeof (hj) != "undefined" && hj.hasOwnProperty("globals")) {
-    var hjUID = JSON.parse(localStorage.getItem("hjActiveViewportIds"))[0].id;
-    outputhjUID = hjUID.split("-").shift();
-    document.getElementById("hotjarid").textContent = outputhjUID;
-    }
-    console.log(outputhjUID)
+// if (typeof (hj) != "undefined" && hj.hasOwnProperty("globals")) {
+//     var hjUID = JSON.parse(localStorage.getItem("hjActiveViewportIds"))[0].id;
+//     outputhjUID = hjUID.split("-").shift();
+//     document.getElementById("hotjarid").textContent = outputhjUID;
+//     }
+//     console.log(outputhjUID)
