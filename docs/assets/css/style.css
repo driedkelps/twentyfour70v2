@@ -863,14 +863,14 @@ th:last-child{
     margin-top: 20px; 
     padding: 20px; 
     color: black; 
-    background-color: #ff914c; 
+    background-color: #ff6831; 
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 .endpage-container #generateHJUID:hover{
-    transition: 0.5s
     transform: scale(1.2);
     color: black; 
-    background-color: #ff6831;
+    background-color: #00bf62;
 }
 
 /*-----media query for less than 600 screen size------*/
