@@ -866,8 +866,7 @@ th:last-child{
     background-color: #ff6831; 
     cursor: pointer;
 }
-.endpage-container #generateHJUID:focus{
-    transition: 0.5s;
+.endpage-container #generateHJUID:active{
     background-color: #00bf62;
 }
 
