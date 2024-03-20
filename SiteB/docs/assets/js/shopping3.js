@@ -705,12 +705,12 @@ spendTotal = document.getElementById("checkoutTotal")
         //     para.appendChild(Bnode);
         //     finalBonus.append(para)
 //total likes<TOTAL NUMBER OF LIKES GIVEN>
-    finalLikesCount = JSON.parse(localStorage.getItem("Likecount"));
-    finalBonus = document.getElementById("checkoutLikes");
-    para = document.createElement("h4");
-    const Lnode = document.createTextNode(finalLikesCount);
-    para.appendChild(Lnode);
-    finalBonus.append(para)
+    // finalLikesCount = JSON.parse(localStorage.getItem("Likecount"));
+    // finalBonus = document.getElementById("checkoutLikes");
+    // para = document.createElement("h4");
+    // const Lnode = document.createTextNode(finalLikesCount);
+    // para.appendChild(Lnode);
+    // finalBonus.append(para)
 }
 
 
