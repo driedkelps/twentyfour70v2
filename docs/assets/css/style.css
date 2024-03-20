@@ -867,6 +867,8 @@ th:last-child{
     cursor: pointer;
 }
 .endpage-container #generateHJUID:hover{
+    transform: scale(1.5);
+    color: white; 
     background-color: #00bf62;
 }
 
