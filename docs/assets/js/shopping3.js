@@ -530,7 +530,7 @@ function updateSpendingBar() {
     if (leftoverL1 <= 0 && leftoverL1check != -1 && leftoverL2check != -1 && leftoverL3check != -1) {
         document.getElementById("spendBonusLevel").innerText = "Level 2"
         balance = balance + 12.30 //add currency here(+$12.30)
-        alert("Reached Level 2! Bonus money get!")
+        //alert("Reached Level 2! Bonus money get!")
         if (balance >= 39.6) {
             balance = balance - 12.40    
             }
@@ -542,7 +542,7 @@ function updateSpendingBar() {
         if (leftoverL2 <= 0 && leftoverL2check != -1 && leftoverL3check != -1) {
             document.getElementById("spendBonusLevel").innerText = "Level 3"
             balance = balance + 12.40//add currency here(+$12.40)
-            alert("Reached Level 3! Bonus money get!")
+            //alert("Reached Level 3! Bonus money get!")
             if (balance >= 54.4) {
             balance = balance - 12.40    
             }
