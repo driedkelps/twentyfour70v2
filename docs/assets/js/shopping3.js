@@ -697,6 +697,7 @@ var addedCartItems = {}
             return
             } else {
                 window.localStorage.setItem("cartData", JSON.stringify(cartData))
+                alert("Added item to cart!")
                 ///console.log(cartData)
             } 
     }
