@@ -567,6 +567,7 @@ function updateSpendingBar() {
     }else if (leftoverL1 <= 0 && leftoverL1check == -1){
         document.getElementById("spendingBarvalue").textContent = "Not enough currency."
     } else{
+        document.getElementById("spendBonusLevel").innerText = "Level 1"
         var newspendPercent = (totalsub / Level1)*100
         document.getElementById("spendingBarvalue").innerText = 'Spend $24.70. | '+'$'+leftoverL1 + ' left!'
         //id.setInterval(frame, spendPercent)
