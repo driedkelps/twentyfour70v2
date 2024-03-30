@@ -527,19 +527,19 @@ function updateSpendingBar() {
     leftoverL2check = Math.sign((balance - totalsub)) ;
     leftoverL3 = parseFloat(Level3 - totalsub).toFixed(2);
     leftoverL3check = Math.sign((balance - totalsub));
-    if (leftoverL1 <= 0 && leftoverL1check != -1 && leftoverL2check != -1 && leftoverL3check != -1) {
+    if (leftoverL1 <= 0 && leftoverL1check != -1 && leftoverL2check != -1 && leftoverL3check != -1 && leftoverL2 >0 && leftoverL3 >0) {
         document.getElementById("spendBonusLevel").innerText = "Level 2"
         balance = balance + 12.30 //add currency here(+$12.30)
         //alert("Reached Level 2! Bonus money get!")
         if (balance >= 39.6) {
-            balance = balance - 12.40    
+            balance = balance - 12.30    
             }
         updatebalanceforCartBonus()
         // const textcontainer = document.getElementsByClassName("spendbarText").createElement("p");
         // const textincontainer = document.createTextNode("Got money!");
         // textcontainer.appendChild(textincontainer)
         console.log("yay")
-        if (leftoverL2 <= 0 && leftoverL2check != -1 && leftoverL3check != -1) {
+        if (leftoverL2 <= 0 && leftoverL2check != -1 && leftoverL3check != -1 && leftoverL3 >0) {
             document.getElementById("spendBonusLevel").innerText = "Level 3"
             balance = balance + 12.40//add currency here(+$12.40)
             //alert("Reached Level 3! Bonus money get!")
