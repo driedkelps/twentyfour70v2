@@ -482,6 +482,7 @@ function updateCartTotal() {
         //console.log(subtotal)
         
         totalsub = totalsub + (qty * subtotal)
+        totalsub = parseFloat(totalsub).toFixed(2)
         total = total + (qty * subtotal) //replace with total+ totalsub - discount
         //console.log(total)
     }
@@ -489,7 +490,7 @@ function updateCartTotal() {
     function updatebalanceforCartBonus() {
     balancevalue = parseFloat(balance).toFixed(2) //parseFloat(balance.innerText.replace('$',''))
 
-    document.getElementsByClassName('cart-subtotal')[0].innerText = '$' + parseFloat(totalsub).toFixed(2)
+    document.getElementsByClassName('cart-subtotal')[0].innerText = '$' + totalsub
     document.getElementsByClassName('cart-total')[0].innerText = '$' + parseFloat(total).toFixed(2)
     document.getElementsByClassName('cart-balance')[0].innerText = '$' + parseFloat(balancevalue - total).toFixed(2)
     window.localStorage.setItem("userbalance", JSON.stringify(balancevalue))
