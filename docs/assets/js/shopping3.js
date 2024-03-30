@@ -520,7 +520,7 @@ function updateSpendingBar() {
     balance = parseFloat(balance)
     const Level1 = 24.70;
     const Level2 = 37.00;
-    const Level3 = 49.409;
+    const Level3 = 49.40009;
     leftoverL1 = parseFloat(Level1 - totalsub).toFixed(2);
     leftoverL1check = Math.sign((balance - totalsub));
     leftoverL2 = parseFloat(Level2 - totalsub).toFixed(2);
