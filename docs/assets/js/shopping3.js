@@ -539,7 +539,7 @@ function updateSpendingBar() {
         // const textincontainer = document.createTextNode("Got money!");
         // textcontainer.appendChild(textincontainer)
         console.log("yay")
-    if (leftoverL2 <= 0 && leftoverL2check != -1 && leftoverL3check != -1 && leftoverL3 >0) {
+    } else if (leftoverL2 <= 0 && leftoverL2check != -1 && leftoverL3check != -1 && leftoverL3 >0) {
             document.getElementById("spendBonusLevel").innerText = "Level 3"
             balance = balance + 12.40//add currency here(+$12.40)
             //alert("Reached Level 3! Bonus money get!")
@@ -551,10 +551,10 @@ function updateSpendingBar() {
             // const textincontainer = document.createTextNode("Got money!");
             // textcontainer.appendChild(textincontainer)
             console.log("yay2")
-    if (leftoverL3 <= 0 && leftoverL3check != -1) {
+    } else if (leftoverL3 <= 0 && leftoverL3check != -1) {
                 document.getElementById("spendBonusLevel").innerText = "Cleared"
                 document.getElementById("spendingBarvalue").textContent = "All reward tiers achieved."
-            }else if (leftoverL3check == -1){
+            if (leftoverL3check == -1){
                 document.getElementById("spendingBarvalue").textContent = "Not enough currency."
             }else {
                 var newspendPercent = (totalsub / Level3)*100
@@ -563,7 +563,7 @@ function updateSpendingBar() {
         } else{
             var newspendPercent = (totalsub / Level2)*100
             document.getElementById("spendingBarvalue").innerText = 'Spend $37.00. | '+'$'+leftoverL2 + ' left!'
-        }
+        
     }else if (leftoverL1 <= 0 && leftoverL1check == -1){
         document.getElementById("spendingBarvalue").textContent = "Not enough currency."
     } else if (leftoverL2check != -1 && leftoverL3check != -1 && leftoverL2 >0 && leftoverL3 >0){
@@ -580,14 +580,7 @@ function updateSpendingBar() {
     // getBalance()
     }
 }
-    // if (localStorage.getItem("realtimeCart") != undefined || null) {
-    //     realtimeCart = JSON.parse(window.localStorage.getItem("realtimeCart"))
-    //     if (realtimeCart.length != 0) {
-    //         result = true
-    //     }
-    // }else {
-    //     return
-    // }
+
 
 
 // add to cart 
