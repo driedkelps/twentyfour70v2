@@ -535,10 +535,16 @@ function updateSpendingBar() {
             balance = balance - 12.30    
             }
         updatebalanceforCartBonus()
-        // const textcontainer = document.getElementsByClassName("spendbarText").createElement("p");
-        // const textincontainer = document.createTextNode("Got money!");
-        // textcontainer.appendChild(textincontainer)
         console.log("yay")
+    }else if (leftoverL1 <= 0 && leftoverL1check == -1){
+        document.getElementById("spendingBarvalue").textContent = "Not enough currency."
+    }else if (leftoverL2check != -1 && leftoverL3check != -1 && leftoverL2 >0 && leftoverL3 >0){
+        document.getElementById("spendBonusLevel").innerText = "Level 1"
+        var newspendPercent = (totalsub / Level1)*100
+        document.getElementById("spendingBarvalue").innerText = 'Spend $24.70. | '+'$'+leftoverL1 + ' left!'
+        //id.setInterval(frame, spendPercent)
+        }
+        
     if (leftoverL2 <= 0 && leftoverL2check != -1 && leftoverL3check != -1 && leftoverL3 >0) {
             document.getElementById("spendBonusLevel").innerText = "Level 3"
             balance = balance + 12.40//add currency here(+$12.40)
@@ -547,31 +553,29 @@ function updateSpendingBar() {
             balance = balance - 12.40    
             }
             updatebalanceforCartBonus()
-            // const textcontainer = document.getElementsByClassName("spendbarText").createElement("p");
-            // const textincontainer = document.createTextNode("Got money!");
-            // textcontainer.appendChild(textincontainer)
             console.log("yay2")
+        
+        }else if (leftoverL2 <= 0 && leftoverL2check == -1){
+        document.getElementById("spendingBarvalue").textContent = "Not enough currency."
+        }else if (leftoverL1 <= 0 && leftoverL1check != -1 && leftoverL3check != -1 && leftoverL3 >0){
+            var newspendPercent = (totalsub / Level2)*100
+            document.getElementById("spendingBarvalue").innerText = 'Spend $37.00. | '+'$'+leftoverL2 + ' left!'
+        }else{
+        
+        }
     if (leftoverL3 <= 0 && leftoverL3check != -1) {
                 document.getElementById("spendBonusLevel").innerText = "Cleared"
                 document.getElementById("spendingBarvalue").textContent = "All reward tiers achieved."
-            }else if (leftoverL3check == -1){
+            }else if (leftoverL3 <= 0 && leftoverL3check == -1){
                 document.getElementById("spendingBarvalue").textContent = "Not enough currency."
-            }else {
+            }else if (leftoverL1 <= 0 && leftoverL1check != -1 && leftoverL2 <= 0 && leftoverL2check != -1 && leftoverL3check != -1 && leftoverL3 >0){
                 var newspendPercent = (totalsub / Level3)*100
                 document.getElementById("spendingBarvalue").innerText = 'Spend $49.40. | '+'$'+leftoverL3 + ' left!'
+            }else{
+        
             }
-        } else{
-            var newspendPercent = (totalsub / Level2)*100
-            document.getElementById("spendingBarvalue").innerText = 'Spend $37.00. | '+'$'+leftoverL2 + ' left!'
-        }
-    }else if (leftoverL1 <= 0 && leftoverL1check == -1){
-        document.getElementById("spendingBarvalue").textContent = "Not enough currency."
-    } else if (leftoverL2check != -1 && leftoverL3check != -1 && leftoverL2 >0 && leftoverL3 >0){
-        document.getElementById("spendBonusLevel").innerText = "Level 1"
-        var newspendPercent = (totalsub / Level1)*100
-        document.getElementById("spendingBarvalue").innerText = 'Spend $24.70. | '+'$'+leftoverL1 + ' left!'
-        //id.setInterval(frame, spendPercent)
-        }
+
+
     var roundnewspendPercent = parseFloat(newspendPercent).toFixed(1)
     document.getElementById("spendingBar").style.width = roundnewspendPercent + "%";
     /// don't update balance here ///
