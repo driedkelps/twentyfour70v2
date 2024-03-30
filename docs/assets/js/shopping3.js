@@ -539,7 +539,7 @@ function updateSpendingBar() {
         // const textincontainer = document.createTextNode("Got money!");
         // textcontainer.appendChild(textincontainer)
         console.log("yay")
-        if (leftoverL2 <= 0 && leftoverL2check != -1 && leftoverL3check != -1 && leftoverL3 >0) {
+    if (leftoverL2 <= 0 && leftoverL2check != -1 && leftoverL3check != -1 && leftoverL3 >0) {
             document.getElementById("spendBonusLevel").innerText = "Level 3"
             balance = balance + 12.40//add currency here(+$12.40)
             //alert("Reached Level 3! Bonus money get!")
@@ -551,7 +551,7 @@ function updateSpendingBar() {
             // const textincontainer = document.createTextNode("Got money!");
             // textcontainer.appendChild(textincontainer)
             console.log("yay2")
-            if (leftoverL3 <= 0 && leftoverL3check != -1) {
+    if (leftoverL3 <= 0 && leftoverL3check != -1) {
                 document.getElementById("spendBonusLevel").innerText = "Cleared"
                 document.getElementById("spendingBarvalue").textContent = "All reward tiers achieved."
             }else if (leftoverL3check == -1){
